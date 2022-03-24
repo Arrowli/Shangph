@@ -11,7 +11,15 @@
         <li class="banner">
           <img src="./images/today01.png" />
         </li>
-        
+        <li class="banner">
+          <img src="./images/today02.png" />
+        </li>
+        <li class="banner">
+          <img src="./images/today03.png" />
+        </li>
+        <li class="banner">
+          <img src="./images/today04.png" />
+        </li>
       </ul>
     </div>
   </div>

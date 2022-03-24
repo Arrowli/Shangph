@@ -2,17 +2,23 @@
   <div>
     <Header/>
     <router-view/>
-    <Footer/>
+    <Footer v-show="!$route.meta.hideFooter"/>
   </div>
 </template>
 
 <script>
-import Footer from './components/Footer/Footer.vue'
-import Header from './components/Header/Header.vue'
+
+import Footer from './components/Footer'
+import Header from './components/Header'
+
 export default {
   components:{
     Footer,
     Header,
+  },
+
+  mounted(){
+    this.$store.dispatch('getbaseCategoryList')
   }
 };
 </script>
